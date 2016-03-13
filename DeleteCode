@@ -1,0 +1,9 @@
+javascript:!function(){
+var a=document,b=a.createElement("div");b.innerHTML='<div id="_msg" style="background-color:rgba(0,0,0,.8);position:fixed;top:0;left:0;min-width:320px;min-height:64px;margin:15px;padding:5px;color:#fff;z-index:99999"></div>',a.body.appendChild(b),b=b.querySelector("div");
+var c=function(c){
+    var d=a.createElement("p");d.innerHTML=c,b.appendChild(d)},d=new XMLHttpRequest,e=a.getElementsByTagName("div");
+    for(i=0;i<e.length;i++){
+    var f=e[i].getAttribute("mid"); if(f){c("Deleting "+f);
+var g="/aj/mblog/del?ajwvr=6",h="mid="+f;d.open("POST",g,!1),d.setRequestHeader("Content-type","application/x-www-form-urlencoded"),d.send(h)}
+}
+return c("本页删除完成"),void window.location.reload()}();
